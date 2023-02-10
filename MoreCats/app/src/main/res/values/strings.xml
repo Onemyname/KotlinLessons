@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MoreCats</string>
+    <string name="HelloHuman">Привет, человек</string>
+    <string name="WhatAreYouLookingFor">Куда уставился?</string>
+    <string name="Look">Посмотрите, кто явился…</string>
+    <string name ="End">"Всех котов распугал, кожаный</string>
+</resources>
