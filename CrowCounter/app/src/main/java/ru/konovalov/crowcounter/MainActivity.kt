@@ -4,13 +4,15 @@ import android.annotation.SuppressLint
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
+import android.util.Log
 import android.widget.Button
 import android.widget.TextView
+import androidx.core.content.PackageManagerCompat.LOG_TAG
 
 class MainActivity : AppCompatActivity() {
     private var crowCounter: Int =0
     private var cowCounter: Int = 0
-
     @SuppressLint("MissingInflatedId", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,5 +49,17 @@ class MainActivity : AppCompatActivity() {
             it.setBackgroundColor(Color.CYAN)
         }
 
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt("crowCount", crowCounter)
+        outState.putInt("cowCOunter", cowCounter)
+    }
+
+    protected override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+        super.onRestoreInstanceState(savedInstanceState)
+        crowCounter = savedInstanceState.getInt("crowCount")
+        cowCounter = savedInstanceState.getInt("cowCOunter")
     }
 }
