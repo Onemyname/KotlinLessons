@@ -13,4 +13,6 @@
     <string name = "John"> Это был сам Джон, чтобы получить страховку.</string>
     <string name = "Vaska"> Кот Васька</string>
     <string name="kolbasa">Фото с колбаской</string>
+    <string name="caseToast">Удастся ли вам поймать преступника?</string>
+    <string name="helpButton">Получить подсказку</string>
 </resources>

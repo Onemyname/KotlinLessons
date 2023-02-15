@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    tools:ignore="ExtraText">
+    tools:ignore="ExtraText"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -19,6 +20,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
+        style = "@style/MyTextStyle"
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -31,6 +33,7 @@
         app:layout_constraintVertical_bias="0.257" />
 
     <Button
+        style = "@style/MyTextStyle"
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,6 +48,7 @@
 
 
     <Button
+        style = "@style/MyTextStyle"
         android:id="@+id/crows_counter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -57,16 +61,13 @@
         tools:ignore="MissingConstraints" />
 
     <Button
+        style = "@style/MyTextStyle2"
         android:id="@+id/cow_counter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
-
         android:text="Считаем коров"
         app:layout_constraintStart_toStartOf="@+id/crows_counter"
         app:layout_constraintTop_toBottomOf="@+id/crows_counter"
         tools:ignore="MissingConstraints" />
-    >
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
