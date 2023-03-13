@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name ="action_settings">Settings</string>
+    <string name="action_cat_male">Kot</string>
+    <string name="action_cat_female">Koshka</string>
+    <string name="action_kitten">Koteno4ek</string>
+</resources>
